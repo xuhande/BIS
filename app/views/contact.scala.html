@@ -1,0 +1,74 @@
+@(implicit flash: Flash)
+@import helper._
+
+@main("Vycos") {
+
+@menu()
+
+<div class="warp">
+    <section class="BI-page-banner">
+        <div class="container">
+            <div class="row  buffer-bottom-lg buffer-top-lg text-center">
+                <h1>Vycos Consulting Services</h1>
+            </div>
+        </div>
+    </section>
+    <section class="BI-contact">
+        <div class="container">
+            <div class="row  buffer-bottom-lg buffer-top-lg contact-mode">
+                <div class="col-xs-6 col-md-6">
+                    <div class="clearfix buffer-bottom-35">
+                        <h3 class="text-info">Vycos国外联系</h3>
+                        <p>Vynfields: Puruatanga Rd, Martinborough</p>
+                        <p>Name. Harry Guo</p>
+                        <p>Tel. +64 6 306 9901</p>
+                        <p>Email: info@@vycos.com</p>
+                    </div>
+                    <div class="clearfix">
+                        <h3 class="text-info">Vycos国内联系</h3>
+                        <p>Vycos(CN): 深圳赢正网络有限公司</p>
+                        <p>名字. 郭先生</p>
+                        <p>电话. 0755-23822322</p>
+                        <p>Email: info@@vycos.com</p>
+                    </div>
+               </div>
+                <div class="col-xs-6 col-md-6">
+                    <div class="contact-board">
+                        <h3>我们想听听你的消息</h3>
+                        @flashing(flash)
+                            <form action='@routes.Contact.sendMail' method="post" id="form-warp">
+                            <div class="form-group">
+                                <label for="email">邮件地址</label>
+                                <input type="email" class="form-control" id="email" placeholder="请输入邮件地址" name="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="name">留言称呼</label>
+                                <input type="text" class="form-control" id="name" placeholder="请输入留言称呼" name="name">
+                            </div>
+                            <div class="form-group">
+                                <label>留言内容</label>
+                                <textarea class="form-control" rows="10" id="message" name="message" placeholder="请输入留言内容"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">提交</button>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<script>
+$(function(){
+    $("#form-warp").submit(function(){
+        if($("#email").val() === "" || $("#name").val() === "" || $("#message").val() === ""){
+            alert("留言信息有错误，请确认后提交");
+            return false;
+        }
+    });
+});
+
+</script>
+@footer()
+
+}

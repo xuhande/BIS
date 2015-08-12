@@ -1,0 +1,261 @@
+.warp{
+        position:relative;
+
+        .BI-banner{
+        display: table;
+                position:relative;
+            background:url('/assets/images/banner.JPG');
+            width:100%;
+            height:500px;
+            .opacity-bg{
+                position:absolute;
+                width:100%;
+                height:100%;
+                background:#000;
+                filter:alpha(opacity=50); /*IE滤镜，透明度50%*/
+                -moz-opacity:0.5; /*Firefox私有，透明度50%*/
+                 opacity:0.5;/*其他，透明度50%*/
+
+            }
+            .table-row{
+               position:absolute;
+            display: table-row;
+                width:100%;
+                height:100%;
+            z-index:99;
+
+            }
+            .vert-text{
+               display: table-cell;;
+                 width:100%;
+               position:absolute;
+               vertical-align: middle;
+               text-align: center;
+               margin-top:200px;
+               color:#fff;
+            }
+        }
+        .BI-product{
+            min-height:300px;
+            .tile{
+                background-color: #ecf0f5;
+                border-radius: 6px;
+                padding: 14px;
+                position: relative;
+                text-align: center;
+               .tile-image {
+                   margin: 31px 0 27px;
+                   vertical-align: bottom;
+               }
+                .tile-image {
+                    text-align:center;
+                    .glyphicon{
+                    color:#2980B9;
+                        font-size:100px;
+                    }
+                }
+                .tile-title {
+                    font-size: 22px;
+                    margin: 30px 0 20px 0;
+                }
+                 p {
+                     font-size: 15px;
+                     margin-bottom: 33px;
+                     line-height:27px;
+                 }
+                 .btn-large{
+                     padding: 11px 19px;
+                     font-size: 17.5px;
+                     -webkit-border-radius: 6px;
+                     -moz-border-radius: 6px;
+                     border-radius: 6px;
+                     font-size: 16.5px;
+                 }
+                 &:hover{
+                    background:#34495E;
+                    color:#fff;
+                    cursor: pointer;
+                    -webkit-transition: 0.5s;
+                    -moz-transition: 0.5s;
+                    -o-transition: 0.5s;
+                    transition: 0.5s;
+                    .glyphicon{
+                        color:#fff;
+                    }
+                 }
+            }
+            .buffer-bottom-30{
+                margin-bottom:30px;
+            }
+            .buffer-height-468{
+                min-height:468px;
+            }
+        }
+        .BI-service{
+            margin-top:80px;
+            h2{
+                margin-top:0;
+            }
+            h3{
+                margin-top: 20px;
+                margin-bottom: 10px;
+            }
+            p{
+                font-size:14px;
+                line-height:27px;
+            }
+            .buffer-top-border{
+                border-top:1px solid #34495E;
+            }
+
+        }
+
+        .BI-contact.contact-bg-34{
+            background:#3498DB;
+        }
+        .BI-Partners{
+            border-top:2px solid #95A5A6;
+            .Partners-cont{
+                text-align:center;
+                img{
+                    width:200px;
+                    height:78px;
+                    margin:0 auto;
+                    display:block;
+                    border:1px solid #ccc;
+
+                }
+            }
+                .buffer-buttom-sm{
+                    margin-bottom:35px;
+                }
+                h1{
+                    margin-bottom:35px;
+                }
+        }
+        .BI-contact{
+            color:#fff;
+            text-align:center;
+            a{
+                display:block;
+                text-decoration: none;
+                width:250px;
+                height:50px;
+                line-height:50px;
+                margin-top:30px;
+                margin-left:auto;
+                margin-right:auto;
+                font-size:22px;
+                border-radius:4px;
+                color:#fff;
+                border:1px solid #fff;
+                    -webkit-transition: 0.5s;
+                    -moz-transition: 0.5s;
+                    -o-transition: 0.5s;
+                    transition: 0.5s;
+                &:hover{
+                    color:#34495E;
+                    border: 1px solid #2C3E50;
+                }
+            }
+            .contact-mode{
+                color:#494747;
+                text-align:left;
+                p{
+                    font-size:16px;
+                    line-height:27px;
+                }
+                .buffer-bottom-35{
+                    margin-bottom:35px;
+                }
+                .contact-board{
+                    padding:30px;
+                    background:#ECF0F1;
+                    h3{
+                        margin-top:0;
+                        margin-bottom:40px;
+                        text-align:center;
+                        color:#5a5856;
+                    }
+                    .form-group label{
+                        line-height:30px;
+                    }
+                }
+            }
+        }
+        .BI-customer{
+
+            h2{
+                margin-top:0;
+            }
+            p{
+                font-size:14px;
+                line-height:27px;
+            }
+
+
+            .customer-image{
+                padding:20px 0;
+                text-align:center;
+                border:1px solid #eee;
+            }
+            .buffer-bottom-35{
+                margin-bottom:35px;
+                padding-bottom:35px;
+            }
+
+            .buffer-bottom-border{
+                border-bottom:1px dashed #eee
+            }
+        }
+        .BI-page-banner{
+            background:#2980B9;
+            padding-top:80px;
+            h1{
+                color:#fff;
+            }
+        }
+        .BI-about{
+            .about-cont{
+                width:900px;
+                margin:0 auto;
+                text-align:center;
+                line-height:30px;
+                h1{
+                    margin-bottom:35px;
+                }
+            }
+            .about-team{
+                .about-image{
+                   max-width: 120px;
+                   min-width: 140px;
+                }
+                h3{
+                    margin-top:0;
+                }
+                p{
+                    font-size:16px;
+                    line-height:27px;
+                }
+                .title-team{
+                    margin-bottom:55px;
+                }
+                .buffer-bottom-35{
+                    margin-bottom:35px;
+                    padding-bottom:35px;
+                }
+            }
+
+            .buffer-bottom-border{
+                border-bottom:1px dashed #eee
+            }
+        }
+}
+
+
+.buffer-bottom-lg {
+    margin-bottom:75px;
+}
+.buffer-top-lg {
+    margin-top:75px;
+}

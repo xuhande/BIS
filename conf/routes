@@ -1,0 +1,39 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Default path will just redirect to the computer list
+GET     /                           controllers.Application.index
+#GET     /jsons                      controllers.Application.jsons
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.at(path="/public/", file)
+
+#wines page
+#GET     /wines                      controllers.Wines.index
+#POST    /wines/save                 controllers.Wines.save
+
+#cafe and wine bar page
+#GET     /winebar                       controllers.Cafe.index
+
+#accommodation page
+#GET     /accommodation              controllers.Service.index
+#POST    /accommodation/save         controllers.Service.save
+#GET     /accommodation/paypal       controllers.Service.paypal
+#GET     /accommodation/json         controllers.Service.json
+
+#vineyard page
+#GET     /vineyard                   controllers.Vineyard.index
+
+#iealert
+#GET    /iealert                      controllers.Application.iealert
+
+
+
+#前端所有页面的URL调用
+
+GET    /service                      controllers.Service.index
+GET    /customer                      controllers.Customer.index
+GET    /contact                      controllers.Contact.index
+GET    /about                       controllers.About.index
+
+POST   /contact/sendMail           controllers.Contact.sendMail
