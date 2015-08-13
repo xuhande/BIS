@@ -1,7 +1,7 @@
 @(implicit flash: Flash)
 @flash.get("Success").map { msg =>
 <div class="alert alert-success message">
-    <div class="container">
+    <div class="container" style="width:100%">
         <i class="glyphicon glyphicon-hand-right messicon"></i>
         @msg
         <i class="glyphicon glyphicon-remove-circle close"></i>
@@ -10,7 +10,7 @@
 }
 @flash.get("Error").map { msg =>
 <div class="alert alert-danger message" >
-    <div class="container">
+    <div class="container" style="width:100%">
         <i class="glyphicon glyphicon-hand-right messicon"></i>
         @msg
         <i class="glyphicon glyphicon-remove-circle close"></i>
